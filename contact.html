@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        /* color: white; */
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Style inputs */
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=number],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: black;
+        cursor: pointer;
+    }
+
+    /* input[type=submit]:onclick{
+    gotogotowhatsapp();
+} */
+    input[type=submit]:hover {
+        background-color: #45a049;
+        font-size: 1.7rpm;
+    }
+
+    /* Style the container/contact section */
+    .container {
+        border-radius: 5px;
+        /* background-color: #f2f2f2; */
+        background-color: rgb(0, 0, 33);
+        color: #fff;
+        padding: 10px;
+    }
+
+    /* Create two columns that float next to eachother */
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+    }
+
+    .row {
+        height: 70vh;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(36, 36, 94);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(170, 170, 230);
+        font-size: 1.02rem;
+        ;
+    }
+
+    footer {
+
+        /* background-color: rgb(36, 36, 94); */
+        height: 60px;
+    }
+
+    footer .footer-text-center {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+    }
+
+    header .left b {
+        font-size: 2rem;
+        color: aliceblue;
+        letter-spacing: 5px;
+        margin: 0 -150px;
+        /* width: 60px; */
+    }
+
+    header .left b:hover {
+        color: rgb(192, 57, 23);
+    }
+
+    header .right {
+        margin: 0 100px;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .column,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <b>PORTFOLIO</b>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container register">
+        <div style="text-align:center">
+            <h1>Contact Us</h1>
+            <p>
+            <h2>Feel Free to talk me</h2>
+            </p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="contact_image.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel"
+                        aria-labelledby="home-tab">
+                        <h3 class="register-heading text-nowrap">HTML Form to WhatsApp</h3>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <form autocomplete="off">
+                                    <div class="form-group">
+                                        <label for="name">Enter Name</label>
+                                        <input type="text" name="Name" id="name" class="form-control"
+                                            placeholder="Your Name *" value="" required="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Enter Email</label>
+                                        <input type="text" name="Email" id="email" class="form-control"
+                                            placeholder="Your Email *" value="" required="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Enter Phone</label>
+                                        <input type="number" name="Phone" id="phone" class="form-control"
+                                            placeholder="Your Contact Number *" value="" required="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="service">Services</label>
+                                        <select class="form-control" id="service">
+                                            <option>Default select</option>
+                                            <option>Website Development</option>
+                                            <option>Mobile App Development</option>
+                                            <option>Web and Mobile Application</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="button" name="submit" class="btnSubmit btn-block"
+                                            onclick="gotowhatsapp()" value="Submit" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="float" style="
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 70px;
+            right: 120px;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px #999;">
+            <img src="whatsapp.png" onclick="gotowhatsapp()" alt="img will come soon" height="60px" width="60px" />
+        </span>
+        <span class="float" style="
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 70px;
+            right: 220px;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px #999;">
+            <img src="email.jpg" onclick="window.open('mailto:shindepratik1663@gmail.com');" alt="" height="60px"
+                width="60px" />
+        </span>
+        <footer>
+            <div class="footer1">
+            </div>
+            <div class="footer-text-center">
+                Copyright &copy;pratiksportfolipo.com || All rights reserved.
+            </div>
+        </footer>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            function gotowhatsapp() {
+
+                var name = document.getElementById("name").value;
+                var phone = document.getElementById("phone").value;
+                var email = document.getElementById("email").value;
+                var service = document.getElementById("service").value;
+
+                var url = "https://wa.me/918554823508?text="
+                    + "Name: " + name + "%0a"
+                    + "Phone: " + phone + "%0a"
+                    + "Email: " + email + "%0a"
+                    + "Service: " + service;
+
+                window.open(url, '_blank').focus();
+            }
+        </script>
+</body>
+
+</html>
